@@ -21,7 +21,7 @@
     <form id="form1" runat="server">
         <div>
 
-            <asp:Table runat="server">
+            <asp:Table runat="server" style="margin-left:auto; margin-right:auto">
                 <asp:TableRow>
                     <asp:TableCell VerticalAlign="Top" Wrap="false">
                 <br />
