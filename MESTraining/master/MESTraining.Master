@@ -1,0 +1,51 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="MESTraining.master.vb" Inherits="MESTraining.MESTraining" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <title></title>
+    <%--    <asp:Image ID="imgRegister" runat="server" ImageUrl="../Images/MES_logo.jpg"  />--%>
+    <center>
+        <a href="https://menv.com/">
+            <img src="../Images/MES_logo.jpg" alt="MES Training Center" style="width: 500px; height: 125px;">
+        </a>
+    </center>
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+            <asp:Table runat="server">
+                <asp:TableRow>
+                    <asp:TableCell VerticalAlign="Top" Wrap="false">
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />                
+                <a href="MESRegistration.aspx">Update Information</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+                <a href="CertificationsHome.aspx">Training Courses</a><br />
+                <a href="LogOut.aspx">Log Out</a><br />
+                <br />
+
+            
+                    </asp:TableCell>
+
+                    <asp:TableCell VerticalAlign="Top">
+                        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                            <link href="styles/BMPDMS.css" rel="stylesheet" />
+                        </asp:ContentPlaceHolder>
+
+                    </asp:TableCell>
+                </asp:TableRow>
+            </asp:Table>
+
+        </div>
+    </form>
+</body>
+</html>

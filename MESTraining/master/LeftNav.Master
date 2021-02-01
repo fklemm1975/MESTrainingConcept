@@ -1,0 +1,72 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/Master/SlimBanner.Master" AutoEventWireup="true" CodeBehind="LeftNav.master.vb" Inherits="MESTraining.LeftNav" %>
+
+<asp:Content ID="Head" ContentPlaceHolderID="HeadContent" runat="Server">
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+</asp:Content>
+
+
+<asp:Content ID="MainWrapper" ContentPlaceHolderID="MainContent" runat="Server">
+    <div class="row-fluid">
+        <div id="primary_content_Block" class="clearfix">
+            <div id="primary_left_col" class="span3">
+                <div class="mdgov_contentWrapper mdgov_subNav">
+                    <asp:ContentPlaceHolder ID="PrimaryLeftCol" runat="server" >
+                        <!-- Default HTML for Left Nav.  If you wish to use the HTML instead of the Sitemap, 
+                            remove all Content blocks with ID of "LeftCol" from Child Masterpages.  (Inner2Col & Inner3Col) -->
+                        <section id="subNav1" class="primary_left_col_list">
+                            <header>
+                                <!-- Step 14: Sub Nav menus -->
+                                <h2 data-target="subNav1">Sub-Navigation Links</h2>
+                            </header>
+                            <div class="subNavWrapper">
+                                <ul class="cl_iconNav">
+                                    <li>
+                                        <a href="#/">Link 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#/">Link 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#/">Link 3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#/">Link 4</a>
+                                    </li>
+                                    <li>
+                                        <a href="#/">Link 5</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section id="subNav2" class="primary_left_col_list">
+                            <header>
+                                <h2 data-target="subNav2">Sub-Navigation Links (Optional)</h2>
+                            </header>
+                            <div class="subNavWrapper">
+                                <ul class="cl_iconNav">
+                                    <li>
+                                        <a href="#/">Link 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#/">Link 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#/">Link 3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#/">Link 4</a>
+                                    </li>
+                                    <li>
+                                        <a href="#/">Link 5</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </asp:ContentPlaceHolder>
+                </div>
+          </div>
+          <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+    </div>
+
+</asp:Content>

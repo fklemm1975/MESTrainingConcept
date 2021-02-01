@@ -1,0 +1,17 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/Master/SlimBanner.Master" AutoEventWireup="true" CodeBehind="Inner1Col.master.vb" Inherits="MESTraining.Inner1Col" %>
+
+<asp:Content ID="Head" ContentPlaceHolderID="HeadContent" runat="server">
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+</asp:Content>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
+    <div class="row-fluid">
+        <div id="primary_content_Block" class="clearfix">
+            <div id="primary_one_col" class="span12">
+                <div class="mdgov_contentWrapper">
+                    <asp:ContentPlaceHolder ID="PrimaryContent" runat="server" />
+                </div>
+            </div>
+        </div>
+    </div>
+</asp:Content>

@@ -1,0 +1,315 @@
+﻿/********** AGENCY(Suplemental) CSS ***********/
+/*********** amends MDstandard.css ***********/
+
+body {
+  /*  background: #008800;    /* fallback (Opera) */
+    background: -moz-linear-gradient(top, #384B90, #04296E);  /* Mozilla: */
+    background: -webkit-gradient(linear, left top, left bottom, from(#384B90), to(#04296E));   /* Chrome, Safari:*/
+    filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#384B90', EndColorStr='#04296E', GradientType='0'); /* MSIE */
+}
+
+
+#container {
+	background-color: #04296E; 
+}
+
+#mdelink {
+	float: left;
+	height: 64px;
+	width: 74px;
+	top: 60px;
+	left: 180px;
+}
+
+#banner {
+	display:block;
+	height: 132px;
+	width:1000px;
+	background-image: url(../images/page/mde_banner1.jpg);
+	background-repeat: no-repeat;
+}
+
+
+/* for IE6 and below */
+* html #banner {
+	height: 107px;
+}
+
+
+#footer {
+	clear: both;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #fff;
+	text-align: right;
+	margin: 0px;
+	padding: 10px 5px 5px 0px;
+    font-size:12px;
+	z-index: 2;
+	background-image: url(../images/page/MDElogo_sm.gif); background-repeat: no-repeat;  
+ background-position: 63% 50%; 
+}
+#footer a {
+	color: #FFF;
+    font-weight:600;
+    font-size:11px;
+}
+
+
+#content {
+	width: 819px;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	padding: 0px 0px 0px 0px;
+}
+
+#content p {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration: none;
+	padding: .5em 10px .5em 10px;
+}
+
+
+#content a {
+	color: #000066;
+	text-decoration: underline;
+	line-height: normal;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+#content a:visited  {
+	color: #666699;
+	text-decoration: underline;
+	line-height: normal;
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+
+
+#content td {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: none;
+}
+
+.interiorRightColText {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#content p.interiorHdr {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #0066CC;
+	text-decoration: none;
+	font-weight: bold
+}
+
+#content h1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #0066CC;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 1.0em 10px .5em 10px;
+}
+
+#content h2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	font-style:normal;	
+	color: #000000;
+	text-decoration: none;
+	padding: .5em 10px .5em 10px;
+}
+
+
+#content h3 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+	padding: .5em 10px .5em 10px;
+}
+
+#content h4 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	font-style:italic;
+	color: #000000;
+	text-decoration: none;
+	padding: .5em 10px .5em 10px;
+}
+
+
+#content ul {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+	margin: .5em 10px .5em 40px;
+	padding: 0px;
+}
+#content ol {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+	margin: .5em 10px .5em  40px;
+	padding: 0px;
+}
+#content li {
+    font-size: 11px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+}
+
+#content p.smallBodyText {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+
+
+#navTab {
+	float:left;
+	margin: -25px 0 0 0px;
+	display:inline;
+	position: relative;
+	width:800px;
+	line-height:19px;
+	font-family: Verdana, Arial, Helvetica, sans-serif   ;
+	font-size: 11px ;
+	font-weight: bolder;
+    letter-spacing:.01cm ;	
+    color: #04296e;
+	text-align: right;
+
+}
+
+#navTab a span {
+	color:#000;
+    font-weight: bolder;
+
+}
+
+
+
+#leftSide {
+	width: 181px;
+	float: left;
+	padding: 0px 0px 0px 0px;
+	margin:0px;
+}
+
+.sideLinks {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: .88em;
+	text-align: right;
+	width: 160px;
+	margin:0px 0px 0px 7px;
+	display: block;
+}
+
+.sideLinks ul {
+	list-style-type: none;	
+	margin: 0px;
+	padding: 0px
+}
+.sideLinks li {	
+	padding: 0px 0px 0.35em 0px;
+	margin: 0px;
+}
+
+.sideLinks li h2{
+	font-size: 1em;
+	color:#f6f499;
+	text-decoration: none;
+	padding-bottom:5px;
+	border-bottom: 2px solid #f6f499;
+}
+
+.sideLinks li a{	
+	text-decoration: none;
+}
+
+.sideLinks a {
+	display: block;
+	text-decoration: none;
+	font-weight: bold;
+	color: #DCDCDC;
+}
+.sideLinks a:visited {
+	display: block;
+	text-decoration: none;
+	font-weight: bold;
+	color: #CCCCCC;
+}
+.sideLinks a:hover {
+	display: block;
+	text-decoration: underline;
+	color: #FFFFFF;
+}
+
+
+#tools {
+	float: top;
+	position: fixed;
+	right:  90px;
+	top:  100px;
+	padding-left: 20px;
+/*	border: 2px solid #007700;*/
+	z-index:1;
+}
+
+#tools a {
+	color: #DCDCDC;
+}
+#tools ul {
+	margin:0;
+	list-style-type: none;
+}
+#tools li {
+	display: inline;
+} 
+
+
+
+
+
+br {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: none;
+}
+
+ul {
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+}
+ol {
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+}
+li {
+	margin: 0px 5px .25em 30px;
+}
+
+
+.boxBlank h2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.clear_top {
+	clear:top;
+}
+

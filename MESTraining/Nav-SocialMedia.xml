@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- Configuration for Social Media Links in the Header and Footer Blocks  -->
+<SocialMedia>
+
+	<!-- Will Only Display either the Icons OR the Directory -->
+	<!-- To Display the Social Media Icons, set the Icons enabled="true" -->
+	<!-- To Display the Directory, set the Icons enabled="false" -->
+	<Icons enabled="true">
+		<!-- For each block, set enabled to false to disable the display of that block -->
+		<!-- url will set the NavigateURL of the A link -->
+		<!-- tooltip will set the display of the title/tooltip -->
+		<FaceBook enabled="true" url="https://www.facebook.com/MDEnvironment" tooltip="FaceBook" target="_blank" />
+		<Twitter enabled="true" url="https://twitter.com/MDEnvironment" tooltip="Twitter" />
+    <Instagram enabled="true" url="https://www.instagram.com/MD_Environment/" tooltip="Instagram" />
+    <Flickr enabled="true" url="https://www.flickr.com/photos/mdenvironment/" tooltip="Flickr" />
+		<YouTube enabled="true" url="https://www.youtube.com/playlist?list=PLlgoHh4Po1J1aVVwT-EnWlFrttMKSRZyk" tooltip="YouTube" />
+		
+		<!--<All enabled="true" url="http://www.maryland.gov/pages/social_media.aspx" tooltip="MD Social Media Directory" />-->
+	</Icons>
+	
+	<!-- Only Displayed when the Icons are disabled.  -->
+	<Directory url="http://www.maryland.gov/pages/social_media.aspx" tooltip="MD Social Media Directory" />
+	
+</SocialMedia>

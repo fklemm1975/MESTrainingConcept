@@ -1,0 +1,51 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="eKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">q\9M_2YfQr8^7N(a)eZ4n3&amp;</Value>
+    </Setting>
+    <Setting Name="FromEmailAddress" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">MESTraining@DO_NOT_REPLY.com</Value>
+    </Setting>
+    <Setting Name="SmtpClient" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">o365-exchange.menv.com</Value>
+    </Setting>
+    <Setting Name="PickupDirectoryFromIIS" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Environment" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PROD</Value>
+    </Setting>
+    <Setting Name="UploadedFilesPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\inetpub\wwwroot\MES\MESTraining\MESTraining\Media\</Value>
+    </Setting>
+    <Setting Name="LogPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\inetpub\wwwroot\MES\MESTraining\MESTraining\Logs\</Value>
+    </Setting>
+    <Setting Name="SamplePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CertificationTypeID" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">3</Value>
+    </Setting>
+    <Setting Name="RPCpt1Verbiage" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="RPCpt1URL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="RPCpt2Verbiage" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="RPCpt2URL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="StateManualVerbiage" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="StateManualURL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>

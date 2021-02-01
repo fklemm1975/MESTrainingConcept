@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "DataAccessWS", "DataAccessWS", "{771BDC5A-8EFC-4585-A54C-2E14827A8A46}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/DataAccessWS"
+		Debug.AspNetCompiler.PhysicalPath = "DataAccessWS\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\DataAccessWS\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/DataAccessWS"
+		Release.AspNetCompiler.PhysicalPath = "DataAccessWS\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\DataAccessWS\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "49329"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessWSTest", "DataAccessWSTest\DataAccessWSTest.csproj", "{7A5960D2-8D62-403F-8882-AD7C9E45E09C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{771BDC5A-8EFC-4585-A54C-2E14827A8A46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{771BDC5A-8EFC-4585-A54C-2E14827A8A46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{771BDC5A-8EFC-4585-A54C-2E14827A8A46}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{771BDC5A-8EFC-4585-A54C-2E14827A8A46}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{7A5960D2-8D62-403F-8882-AD7C9E45E09C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A5960D2-8D62-403F-8882-AD7C9E45E09C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A5960D2-8D62-403F-8882-AD7C9E45E09C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A5960D2-8D62-403F-8882-AD7C9E45E09C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

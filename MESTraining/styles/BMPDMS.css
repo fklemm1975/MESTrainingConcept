@@ -1,0 +1,237 @@
+﻿body
+.BDHeader
+{
+    color:#04296e; 
+    font-weight:bold; 
+    font-family:Calibri; 
+    font-size:22pt;
+    text-align:center;
+}
+
+.BMPXPageTitle
+{
+    font-weight:bold;
+    font-size:22px;
+    text-align: left;
+} 
+
+.BMPXPageTitleCenter
+{
+    font-weight:bold;
+    font-size:22px;
+    text-align: center;
+} 
+
+.BMPXHeader
+{
+    font-family:Calibri; 
+    font-weight:bold;
+    font-size:20px;
+    text-align: left;
+}   
+
+ .BMPXMessage
+ {
+    font-family:Sans-serif; 
+    font-size:14px;
+    padding:3px; 
+    color:Green;
+ }
+ 
+ .BMPXMessageNoPad
+ {
+    font-family:Sans-serif; 
+    font-size:14px;
+    color:Green;
+ } 
+
+#BMPXLogin label
+{
+    display:inline;
+}
+ .BMPXB12 {
+    font-weight:bold; 
+    font-size:12px;
+}
+
+
+/*  Checkbox fix */
+.inlineStyle label{
+    display:inline-block;
+}
+
+
+/* Grid View
+----------------------------------------------------------*/
+.BMPXGridViewAccordion3
+{   
+    width:741;
+    border: none;
+}
+
+.BMPXGridView
+{   
+    width:741;
+    margin-left:5px;   
+    border: none;
+    margin-right:10px;
+}
+
+.BMPXGridViewScrolling
+{   
+    width:741;
+    margin-left:5px;   
+    border: none;
+    margin-right:10px;
+    overflow:auto;
+}
+/* This came out of BMPXGridViewScrolling
+    height:300px;
+*/
+
+.FixedHeader {
+    position: absolute;
+    font-weight: bold;
+} 
+
+.BMPXGridView th
+{
+    padding:3px; 
+}
+
+.BMPXGridView td
+{
+    padding:3px; 
+    vertical-align:middle;    
+}
+
+.BMPXGridView textbox
+{
+    vertical-align:middle;    
+}
+
+.BMPXGridViewHeaderCenter
+{
+    font-weight:bold;
+    color:Gray;
+    border-bottom: gray 2px solid;
+    text-align:center;
+}
+
+.BMPXGridViewHeaderCenter th
+{
+    border: none;
+    text-align:center;
+}
+
+.BMPXGridViewHeaderCenter a
+{
+    font-weight:bold;
+    color:Gray;
+}
+
+.BMPXGridViewHeader
+{
+    color:Gray;
+    border-bottom: gray 2px solid;
+    font-weight: normal;
+}
+/*
+    font-weight:bold;
+  */
+
+.BMPXGridViewHeader th
+{
+    border: none;
+}
+
+.BMPXGridViewHeader a
+{
+    color:Gray;
+    font-weight: normal;
+}
+
+.BMPXGridViewFooter
+{
+    background-color:#1C5E55;
+    font-weight:bold;
+    color:White;
+}
+.BMPXGridViewPagerStyle
+{
+/*
+background-color:#666666;
+color:Black;
+*/
+background-color:#666666;
+color:White;
+
+}
+
+.BMPXGridViewRow
+{
+    background-color:#e5e9f3;
+    border-top: lightgray 1px solid;
+    border-bottom: lightgray 1px solid;
+    vertical-align:top;
+}
+.BMPXGridViewRow td
+{
+    border: none;
+}
+.BMPXGridViewAlternatingRow
+{
+    background-color:#FFFFFF;
+    border-top: lightgray 1px solid;
+    border-bottom: lightgray 1px solid;     
+}
+.BMPXGridViewAlternatingRow td
+{
+     border:none;
+    vertical-align:top;
+}
+.BMPXGridViewSelectedRow
+ {
+     background-color: #5E78AA;
+     font-weight:bold;
+     color: White;
+ }
+ .BMPXGridViewSelectedRow td
+ {
+     border: none;
+ }
+ .BMPXGridViewEditRow
+ {
+     background-color:#5E78AA;
+     font-weight: bold;
+     color: White;
+     
+ }
+ 
+ .empty td
+{
+    border-style: none;
+    border-width: 0px;
+}
+
+ .GridPager a, .GridPager span
+{
+    display: block;
+    height: 20px;
+    width: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+ .GridPager a
+{
+    background-color: #f5f5f5;
+    color: #003366;
+    border: 1px solid #969696;
+}
+ .GridPager span
+{
+    background-color: #6d93f2;
+    color: #000;
+    border: 1px solid #3AC0F2;
+}

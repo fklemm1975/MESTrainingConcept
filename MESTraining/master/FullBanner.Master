@@ -1,0 +1,95 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/Master/Main.master" AutoEventWireup="true" CodeBehind="FullBanner.Master.vb" Inherits="MESTraining.FullBanner" %>
+<%@ MasterType VirtualPath="~/master/Main.master" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" Runat="Server">
+    <!-- Step 8: Necessary .js and .css for statewide alerts  -->   
+  	<script type="text/javascript" src='<%# ResolveUrl("~/egov/js/MDAlertCode.js") %>'></script>
+    <!-- Test Pilot for Statewide Alert -->
+    <!--<script type="text/javascript" src='<%# ResolveUrl("~/egov/js/PilotAlertTestCode.js") %>'></script>-->
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="HeaderBannerBlock" runat="server">
+    <div class="row-fluid">
+        <div id="agency_branding" class="clearfix">
+            <div id="mdgov_crownLogo" class="span2 clearfix">
+                <div id="mdgov_homeLink">
+                    <!-- Step 2 : MD Crown logo and link -->
+                    <a href="http://www.maryland.gov/">
+                        <span class="hidden-accessible">Maryland.gov Home</span>
+                    </a>
+                </div>
+            </div>
+            <div id="mdgov_agencyName" class="span7 clearfix">
+                <div id="mdgov_agencyTitle">
+                    <!-- Step 3 : Add Agency Title and link to home page -->
+                    <!-- Set SRC in Web.Config file under AgencyTitleLink -->
+                    <a id="AgencyTitleLink" runat="server" href="#">
+                        <img id="AgencyTitleImage" src="~/egov/img/agencyTitle-generic.png" alt="" runat="server" />
+                    </a>
+                </div>
+            </div>
+            <div id="mdgov_agencyHeader" class="span3 clearfix">
+                <div id="mdgov_agencyLogo">
+                    <!-- Step 5: Optional Agency logo and link, replace with agency_logo_blank.png if none -->
+                    <!-- Set SRC in Web.Config file under AgencyLogoLink -->
+                    <a id="AgencyLogoLink" runat="server" href="#">
+                        <img id="AgencyLogoImage" src="~/egov/img/agencyLogo-generic.png" alt="" runat="server" />
+                    </a>
+                </div>
+                <div class="mdgov_socialNav clearfix">
+                    <asp:XmlDataSource ID="SocialNav" runat="server" DataFile="~/Nav-SocialMedia.xml" XPath="SocialMedia" />
+<%--                    <nav:SocialMedia ID="SocialMediaButtons" runat="server" DataSourceID="SocialNav" EnableViewState="false">--%>
+                        <cc1:SocialMedia ID="SocialMediaButtons" runat="server" DataSourceID="SocialNav" EnableViewState="false">
+                        <DataBindings>
+                            <asp:MenuItemBinding Depth="0" DataMember="SocialMedia" />
+                            <asp:MenuItemBinding Depth="1" EnabledField="enabled" DataMember="Icons" />
+                            <asp:MenuItemBinding Depth="1" DataMember="Directory" NavigateUrlField="url" ToolTipField="tooltip" />
+                            <asp:MenuItemBinding Depth="2" EnabledField="enabled" NavigateUrlField="url" ToolTipField="tooltip" />
+                        </DataBindings>
+                        </cc1:SocialMedia>
+                    <%--</nav:SocialMedia>--%>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mdgov_enterpriseSearch" class="clearfix">
+        <div id="mdgov_enterpriseSearchContainer">
+            <div id="mdgov_searchInput">
+                <asp:Panel ID="SearchPanel" runat="server" DefaultButton="SearchButton" Visible="true">
+                    <!-- Step 7 : statewide search code -->
+                    <asp:label runat="server" ID="searchInputLabel" AssociatedControlID="searchInputBox" CssClass="hidden-accessible" Text="Search" />
+                    <asp:TextBox runat="server" ID="searchInputBox" CssClass="mdgov_searchInputBox" Value="Search" onBlur="if(this.value=='')this.value='Search';" onfocus="if(this.value=='Search')this.value='';" />
+                    <div class="mdgov_searchButton btn btn-primary searchButtonDiv">
+                        <asp:ImageButton runat="server" ID="searchButton" OnClick="Search_Click" CssClass="fillImageButton" ImageUrl="~/egov/img/icons/search.png" AlternateText="Search" />
+                    </div>
+                </asp:Panel>
+            </div>
+            <!-- Step 8: Placeholder for statewide alerts and Agency topics/alerts -->
+            <div id="mdgov_trendsAlertsWrapper">
+            </div>
+            <!-- Set Visible="true" to show Alert for Agency. -->
+            <asp:Panel runat="server" ID="AgencyAlertPanel" Visible="false">
+                <div id="agency_trendsAlertsWrapper">
+                    <div id="agency_trendsAndAlerts" class="hidden-phone hasAlert">
+                        <div id="agency_alerts">
+                            <a href="#">
+                                <!-- Uncomment the Line Below to add alert icon -->
+                                <!--<i class="agency_alertIcon icon-warning-sign"></i>-->
+                                <h2>DELAYED START TIME</h2>
+                                <p>Buildings &amp; Non-Essential Employees</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </asp:Panel>
+
+        </div>
+    </div>
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="MainContent" Runat="Server">
+    <!-- Main Content -->
+    <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+    <!-- End Main Content -->
+</asp:Content>

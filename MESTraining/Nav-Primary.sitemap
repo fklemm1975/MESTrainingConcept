@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode roles="*">
+    <siteMapNode url="http://mde.maryland.gov/Pages/index.aspx" title="HOME"  description="HOME" />
+    <siteMapNode url="http://mde.maryland.gov/Pages/AboutMDE.aspx" title="ABOUT MDE"  description="ABOUT MDE" />
+    <siteMapNode url="http://mde.maryland.gov/programs/Air/Pages/index.aspx" title="AIR"  description="AIR" />
+    <siteMapNode url="http://mde.maryland.gov/programs/Land/Pages/index.aspx" title="LAND"  description="LAND" />
+    <siteMapNode url="http://mde.maryland.gov/programs/water/pages/index.aspx" title="WATER"  description="WATER" />
+    <siteMapNode url="http://mde.maryland.gov/programs/Marylander/Pages/index.aspx" title="MARYLANDER"  description="MARYLANDER" />
+    <siteMapNode url="http://mde.maryland.gov/programs/Permits/Pages/index.aspx" title="PERMITS"  description="PERMITS" />
+    <siteMapNode url="http://news.maryland.gov/mde/" title="NEWSROOM"  description="NEWSROOM" />
+  </siteMapNode>
+</siteMap>

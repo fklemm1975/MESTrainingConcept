@@ -1,0 +1,27 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/Master/LeftNav.Master" AutoEventWireup="true" CodeBehind="Inner3Col.Master.vb" Inherits="MESTraining.Inner3Col" %>
+
+<asp:Content ID="Head" ContentPlaceHolderID="HeadContent" runat="server">
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+</asp:Content>
+
+<asp:Content ID="LeftCol" ContentPlaceHolderID="PrimaryLeftCol" runat="server">
+    <asp:ContentPlaceHolder id="PrimaryLeftCol" runat="server">
+        <!-- Step 14: Sub Nav menus -->
+        <asp:SiteMapDataSource runat="server" id="SubLinks" ShowStartingNode="false" SiteMapProvider="SubNav" />
+        <%--<nav:subnavigation id="SubNavigationLinks" runat="server" datasourceid="SubLinks" />--%>
+        <cc1:SubNavigation id="SubNavigationLinks" runat="server" datasourceid="SubLinks" />
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Main" ContentPlaceHolderID="MainContent" runat="Server">
+    <div id="primary_middle_col" class="span5">
+        <div class="mdgov_contentWrapper">
+            <asp:ContentPlaceHolder ID="PrimaryMiddleCol" runat="server" />
+        </div>
+    </div>
+    <div id="primary_right_col" class="span4">
+        <div class="mdgov_contentWrapper">
+            <asp:ContentPlaceHolder ID="PrimaryRightCol" runat="server" />
+        </div>
+    </div>
+</asp:Content>

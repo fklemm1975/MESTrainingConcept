@@ -1,0 +1,22 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Test.master.vb" Inherits="MESTraining.Test" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>  </title>
+    Testing the Title
+        <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div> <b>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        Test.Master
+        </asp:ContentPlaceHolder>
+        </b>
+    </div>
+    </form>
+</body>
+</html>

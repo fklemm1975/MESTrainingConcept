@@ -1,0 +1,76 @@
+﻿<%@ Master Language="VB" MasterPageFile="~/Master/FullBanner.Master" AutoEventWireup="true" CodeBehind="Index2Col.Master.vb" Inherits="MESTraining.Index2Col" %>
+
+<asp:Content ID="Head" ContentPlaceHolderID="HeadContent" runat="server">
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+</asp:Content>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="Server">
+    <!-- Primary Content -->
+    <div class="row-fluid">
+        <div id="primary_content_Block">
+            <div id="primary_left_col" class="span3 leftMargin0">
+                <div class="mdgov_contentWrapper mdgov_subNav">
+                    <asp:ContentPlaceHolder ID="PrimaryLeftCol" runat="server" />
+                </div>
+            </div>
+            <div id="primary_right_col" class="span9">
+                <div class="mdgov_contentWrapper">
+                    <asp:ContentPlaceHolder ID="PrimaryRightCol" runat="server" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Upper Secondary Content Block -->
+    <div class="row-fluid">
+        <div id="secondary_content_Block" class="clearfix">
+            <!-- Secondary Content.  Below Primary Content and above Governor's Image. -->
+            <div class="span6 leftMargin0 clearfix">
+                <div id="secondary_left_col">
+                    <asp:ContentPlaceHolder ID="UpperSecondaryConentBlockLeft" runat="server" />
+                </div>
+            </div>
+            <div class="span2">
+                <div id="secondary_middle_col_lt">
+                    <asp:ContentPlaceHolder ID="UpperSecondaryConentBlockMiddleLeft" runat="server" />
+                </div>
+            </div>
+            <div class="span2">
+                <div id="secondary_middle_col_rt">
+                    <asp:ContentPlaceHolder ID="UpperSecondaryConentBlockMiddleRight" runat="server" />
+                </div>
+            </div>
+            <div class="span2">
+                <div id="secondary_middle_col_rt">
+                    <asp:ContentPlaceHolder ID="UpperSecondaryConentBlockRight" runat="server" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lower Secondary Content Block -->
+    <div class="row-fluid">
+        <div id="secondary_content_Block" class="clearfix">
+            <div class="span4 clearfix">
+                <!-- Step 11 : Governors image and link -->
+                <div id="governorBlock">
+                    <a href="http://governor.maryland.gov/announcement.html">
+                        <img src="http://governor.maryland.gov/images/governor_agy.jpg" alt="Governor's Office"/></a>
+                </div>
+            </div>
+            <!-- Content for area right of the Governer's Image -->
+            <div class="span4">
+                <div id="secondary_middle_col_rt">
+                    <asp:ContentPlaceHolder ID="LowerSecondaryConentBlockMiddle" runat="server" />
+                </div>
+            </div>
+            <div class="span4">
+                <div id="secondary_right_col">
+                    <asp:ContentPlaceHolder ID="LowerSecondaryConentBlockRight" runat="server" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+</asp:Content>
+

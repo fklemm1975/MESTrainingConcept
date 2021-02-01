@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MESTraining", "MESTraining\MESTraining.vbproj", "{33280FA1-B148-44E4-AB7A-6EE64E5AFE0B}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MESTrainingDB", "MESTrainingDB\MESTrainingDB.vbproj", "{1462872A-AE2F-491A-BB1A-026085B74001}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Design", "Design\Design.csproj", "{DA00B3D9-7CE5-4634-A7D2-9A6D3F92C382}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "MESTrainingSetup", "MESTrainingSetup\MESTrainingSetup.vdproj", "{233D7736-1F9B-4FC6-8274-7E940006390B}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Certification.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33280FA1-B148-44E4-AB7A-6EE64E5AFE0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33280FA1-B148-44E4-AB7A-6EE64E5AFE0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33280FA1-B148-44E4-AB7A-6EE64E5AFE0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33280FA1-B148-44E4-AB7A-6EE64E5AFE0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1462872A-AE2F-491A-BB1A-026085B74001}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1462872A-AE2F-491A-BB1A-026085B74001}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1462872A-AE2F-491A-BB1A-026085B74001}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1462872A-AE2F-491A-BB1A-026085B74001}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA00B3D9-7CE5-4634-A7D2-9A6D3F92C382}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA00B3D9-7CE5-4634-A7D2-9A6D3F92C382}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA00B3D9-7CE5-4634-A7D2-9A6D3F92C382}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA00B3D9-7CE5-4634-A7D2-9A6D3F92C382}.Release|Any CPU.Build.0 = Release|Any CPU
+		{233D7736-1F9B-4FC6-8274-7E940006390B}.Debug|Any CPU.ActiveCfg = Debug
+		{233D7736-1F9B-4FC6-8274-7E940006390B}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

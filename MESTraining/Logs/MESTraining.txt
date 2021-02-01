@@ -1,0 +1,67 @@
+
+
+9/8/2020 4:23 PM - Testing 9/8
+Method Name: Page_Load
+Method Name: OnLoad
+
+
+9/8/2020 4:23 PM - We're not creating this directory: 'D:\Projects\MES\MESTraining\MESTraining\MESTraining\Media\3'
+Method Name: Page_Load
+Method Name: OnLoad
+
+
+9/8/2020 4:23 PM - Monday, January 01, 0001 -  Request.Files(f): 'file'
+Method Name: Page_Load
+Method Name: OnLoad
+
+
+9/8/2020 4:23 PM - Monday, January 01, 0001 -  Save this file: 'D:\Projects\MES\MESTraining\MESTraining\MESTraining\Media\3\Videos\PPE & Respiratory Protection Awareness  Training_8.29.19_VIDEO.mp4'
+Method Name: Page_Load
+Method Name: OnLoad
+
+
+9/8/2020 4:26 PM - Testing 9/8
+Method Name: Page_Load
+Method Name: OnLoad
+
+
+9/8/2020 4:26 PM - We're not creating this directory: 'D:\Projects\MES\MESTraining\MESTraining\MESTraining\Media\3'
+Method Name: Page_Load
+Method Name: OnLoad
+
+
+9/8/2020 4:27 PM - Monday, January 01, 0001 -  Request.Files(f): 'file'
+Method Name: Page_Load
+Method Name: OnLoad
+
+
+9/8/2020 4:27 PM - Monday, January 01, 0001 -  Save this file: 'D:\Projects\MES\MESTraining\MESTraining\MESTraining\Media\3\Videos\PPE & Respiratory Protection Awareness  Training_8.29.19_VIDEO.mp4'
+Method Name: Page_Load
+Method Name: OnLoad
+
+
+9/8/2020 4:27 PM - Monday, January 01, 0001 -  Finisheed Saving this file: 'D:\Projects\MES\MESTraining\MESTraining\MESTraining\Media\3\Videos\PPE & Respiratory Protection Awareness  Training_8.29.19_VIDEO.mp4'
+Method Name: Page_Load
+Method Name: OnLoad
+
+
+2/1/2021 10:47 AM - Testing 9/8
+Method Name: Page_Load
+Method Name: OnLoad
+
+
+2/1/2021 10:48 AM - Testing 9/8
+Method Name: Page_Load
+Method Name: OnLoad
+
+
+2/1/2021 10:50 AM - Testing 9/8
+Method Name: Page_Load
+Method Name: OnLoad
+
+
+2/1/2021 12:30 PM - PageLoad Error: MESTraining
+
+Object reference not set to an instance of an object.
+Method Name: Page_Load
+Method Name: OnLoad

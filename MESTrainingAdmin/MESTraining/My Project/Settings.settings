@@ -1,0 +1,57 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="UserName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="FTPEncryptedUserName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">7aTk470d3Bg=</Value>
+    </Setting>
+    <Setting Name="FTPEncryptedPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">TEp1ggdQy0JPwJoOtUgo1A==</Value>
+    </Setting>
+    <Setting Name="Environment" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Production</Value>
+    </Setting>
+    <Setting Name="CurrentWebSite" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="UriString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://gis.menv.com/MESTraining/upload.aspx</Value>
+    </Setting>
+    <Setting Name="WebClientTimeout" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="DefaultTrainingSiteName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">MESTraining</Value>
+    </Setting>
+    <Setting Name="DefaultEncryptedString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">tHdr6L1XtyzHdPo3VJoOVHsX64u/r4YuS6QeDvjVP54VdvrTlD+vWwz1W9deA6UPza0LBmm0NvG6IftKcPxkez7rJXDMRG2p</Value>
+    </Setting>
+    <Setting Name="DefaultURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://gis.menv.com/MESTraining/</Value>
+    </Setting>
+    <Setting Name="TrainingSiteName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">MESTraining</Value>
+    </Setting>
+    <Setting Name="EncryptedString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">tHdr6L1XtyzHdPo3VJoOVHsX64u/r4YuS6QeDvjVP54VdvrTlD+vWwz1W9deA6UPza0LBmm0NvG6IftKcPxkez7rJXDMRG2p</Value>
+    </Setting>
+    <Setting Name="URL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://gis.menv.com/MESTraining/</Value>
+    </Setting>
+    <Setting Name="DefaultMediaDir" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\inetpub\wwwroot\MES\MESTraining\MESTraining\Media\</Value>
+    </Setting>
+    <Setting Name="MediaDir" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\inetpub\wwwroot\MES\MESTraining\MESTraining\Media\</Value>
+    </Setting>
+    <Setting Name="WebServiceURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://gis.menv.com/MES/DataAccessWS/</Value>
+    </Setting>
+    <Setting Name="MESTraining_com_menv_gis_DataAccessWS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://gis.menv.com/MES/DataAccessWS/DataAccessWS.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

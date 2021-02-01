@@ -1,0 +1,549 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{BB1F8B09-D3B2-4DAE-883D-E8BDE27C9F95}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MESTraining</RootNamespace>
+    <AssemblyName>MESTraining</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>MESTraining.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PublishDatabases>false</PublishDatabases>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>MESTraining.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=1.0.20229.20821, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\eAIR\3rd Party dlls\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ClosedXML">
+      <HintPath>..\3rd Party dlls\ClosedXML_v0.68.1.0\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\3rd Party dlls\ClosedXML_v0.68.1.0\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="SimpleEncryption">
+      <HintPath>..\3rd Party dlls\SimpleEncryption.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Code\" />
+    <Folder Include="App_Data\" />
+    <Folder Include="bin\ko\" />
+    <Folder Include="Downloads\" />
+    <Folder Include="egov\css\ie\" />
+    <Folder Include="egov\frameworks\bootstrap\css\" />
+    <Folder Include="egov\frameworks\bootstrap\img\" />
+    <Folder Include="egov\img\backgrounds\" />
+    <Folder Include="egov\img\icons\" />
+    <Folder Include="egov\img\sprites\" />
+    <Folder Include="egov\js\" />
+    <Folder Include="js\" />
+    <Folder Include="Pages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Certification.aspx" />
+    <Content Include="CertificationsHome.aspx" />
+    <Content Include="Exam.aspx" />
+    <Content Include="ExamRepeaterControl.ascx" />
+    <Content Include="ExamResults.aspx" />
+    <Content Include="HtmlPage1.html" />
+    <Content Include="images\btnContent.png" />
+    <Content Include="images\btnExam.png" />
+    <Content Include="images\btnPractice.png" />
+    <Content Include="images\btnReporting.png" />
+    <Content Include="images\Certificate.png" />
+    <Content Include="images\CertificateImage.png" />
+    <Content Include="images\continue - Copy.png" />
+    <Content Include="images\continue.png" />
+    <Content Include="images\IAgree.png" />
+    <Content Include="images\login.png" />
+    <Content Include="images\MarylandLogo.png" />
+    <Content Include="images\mde-logo-crown.png" />
+    <Content Include="images\mde-logo-txt.png" />
+    <Content Include="images\MDELogo.jpg" />
+    <Content Include="images\mes-logo.png" />
+    <Content Include="images\MES_logo.jpg" />
+    <Content Include="images\new.png" />
+    <Content Include="images\register.png" />
+    <Content Include="images\save.png" />
+    <Content Include="images\saveandcomplete.png" />
+    <Content Include="images\saveandcompletelater.png" />
+    <Content Include="images\saveandcontinue.png" />
+    <Content Include="images\search.png" />
+    <Content Include="images\start.png" />
+    <Content Include="images\submitforgrading.png" />
+    <Content Include="images\takeexam.png" />
+    <Content Include="images\tvArrowRight.png" />
+    <Content Include="images\tvComplete.png" />
+    <Content Include="images\tvIncomplete.png" />
+    <Content Include="images\update.png" />
+    <Content Include="Login.aspx" />
+    <Content Include="LogOut.aspx" />
+    <Content Include="MarineRegistration.aspx" />
+    <Content Include="Account\Registration.aspx" />
+    <Content Include="ChangePassword.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="ForgotPassword.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="images\icons\nav_backward.png" />
+    <Content Include="images\icons\nav_backward_end.png" />
+    <Content Include="images\icons\nav_forward.png" />
+    <Content Include="images\icons\nav_forward_end.png" />
+    <Content Include="images\MDELogo_Horizontal_GreenText.png" />
+    <Content Include="images\MDELogo_NoText.png" />
+    <Content Include="images\MDELogo_Vertical_GreenText.png" />
+    <Content Include="images\page\-MDElogo_sm.gif" />
+    <Content Include="images\page\blank.gif" />
+    <Content Include="images\page\bodyBG.gif" />
+    <Content Include="images\page\Copy of tableft.gif" />
+    <Content Include="images\page\MDElogo_sm.gif" />
+    <Content Include="images\page\MDE_banner1.jpg" />
+    <Content Include="images\page\mde_logo_sm.gif" />
+    <Content Include="images\page\MDlogo.gif" />
+    <Content Include="images\page\searchButton.gif" />
+    <Content Include="images\page\tableft.gif" />
+    <Content Include="images\page\tabright.gif" />
+    <Content Include="MESRegistration.aspx" />
+    <Content Include="MESRegistrationNew.aspx" />
+    <Content Include="Nav-Footer.sitemap" />
+    <Content Include="Nav-Primary.sitemap" />
+    <Content Include="Nav-Sub.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="myLocal.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="styles\BMPDMS.css" />
+    <Content Include="bin\myLocal.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="master\MESTraining.Master" />
+    <Content Include="master\Test.Master" />
+    <Content Include="master\MESTrainingLogin.Master" />
+    <None Include="My Project\PublishProfiles\CaseInformation_MESTEST.pubxml" />
+    <None Include="My Project\PublishProfiles\MDE_OCP_Case.pubxml" />
+    <Content Include="Nav-SocialMedia.xml" />
+    <Content Include="scripts\Print.js" />
+    <Content Include="styles\Site.css" />
+    <Content Include="style\agencyAdd.css" />
+    <Content Include="style\MDhandheld.css" />
+    <Content Include="style\MDstandard.css" />
+    <Content Include="style\print-preview.css" />
+    <Content Include="style\print.css" />
+    <Content Include="Test.aspx" />
+    <Content Include="Upload.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XSDs\MReport.xsc">
+      <DependentUpon>MReport.xsd</DependentUpon>
+    </Content>
+    <None Include="My Project\PublishProfiles\MESTraining.pubxml" />
+    <None Include="XSDs\MReport.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MReport.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="XSDs\MReport.xss">
+      <DependentUpon>MReport.xsd</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Certification.aspx.designer.vb">
+      <DependentUpon>Certification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Certification.aspx.vb">
+      <DependentUpon>Certification.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CertificationsHome.aspx.designer.vb">
+      <DependentUpon>CertificationsHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CertificationsHome.aspx.vb">
+      <DependentUpon>CertificationsHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Exam.aspx.designer.vb">
+      <DependentUpon>Exam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exam.aspx.vb">
+      <DependentUpon>Exam.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ExamRepeaterControl.ascx.designer.vb">
+      <DependentUpon>ExamRepeaterControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamRepeaterControl.ascx.vb">
+      <DependentUpon>ExamRepeaterControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamResults.aspx.designer.vb">
+      <DependentUpon>ExamResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamResults.aspx.vb">
+      <DependentUpon>ExamResults.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="LogOut.aspx.designer.vb">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogOut.aspx.vb">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MarineRegistration.aspx.designer.vb">
+      <DependentUpon>MarineRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MarineRegistration.aspx.vb">
+      <DependentUpon>MarineRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\Registration.aspx.designer.vb">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Registration.aspx.vb">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CertDB.vb" />
+    <Compile Include="CertDBLib.vb" />
+    <Compile Include="CertDto.vb" />
+    <Compile Include="ChangePassword.aspx.designer.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.vb">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Classes\BasePageSessionExpire.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Classes\BMPXDB.vb" />
+    <Compile Include="Classes\BMPXDto.vb" />
+    <Compile Include="Classes\BMPXLib.vb" />
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.designer.vb">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.vb">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="master\FullBanner.Master.designer.vb">
+      <DependentUpon>FullBanner.Master</DependentUpon>
+    </Compile>
+    <Compile Include="master\FullBanner.Master.vb">
+      <DependentUpon>FullBanner.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\Index2Col.Master.designer.vb">
+      <DependentUpon>Index2Col.Master</DependentUpon>
+    </Compile>
+    <Compile Include="master\Index2Col.Master.vb">
+      <DependentUpon>Index2Col.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\Index3Col.Master.designer.vb">
+      <DependentUpon>Index3Col.Master</DependentUpon>
+    </Compile>
+    <Compile Include="master\Index3Col.Master.vb">
+      <DependentUpon>Index3Col.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\Inner1Col.Master.designer.vb">
+      <DependentUpon>Inner1Col.Master</DependentUpon>
+    </Compile>
+    <Compile Include="master\Inner1Col.Master.vb">
+      <DependentUpon>Inner1Col.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\Inner2Col.Master.designer.vb">
+      <DependentUpon>Inner2Col.Master</DependentUpon>
+    </Compile>
+    <Compile Include="master\Inner2Col.Master.vb">
+      <DependentUpon>Inner2Col.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\Inner3Col.Master.designer.vb">
+      <DependentUpon>Inner3Col.Master</DependentUpon>
+    </Compile>
+    <Compile Include="master\Inner3Col.Master.vb">
+      <DependentUpon>Inner3Col.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\LeftNav.Master.designer.vb">
+      <DependentUpon>LeftNav.Master</DependentUpon>
+    </Compile>
+    <Compile Include="master\LeftNav.Master.vb">
+      <DependentUpon>LeftNav.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\Main.master.designer.vb">
+      <DependentUpon>Main.master</DependentUpon>
+    </Compile>
+    <Compile Include="master\Main.master.vb">
+      <DependentUpon>Main.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\MESTraining.Master.designer.vb">
+      <DependentUpon>MESTraining.Master</DependentUpon>
+    </Compile>
+    <Compile Include="master\MESTraining.Master.vb">
+      <DependentUpon>MESTraining.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\MESTrainingLogin.Master.designer.vb">
+      <DependentUpon>MESTrainingLogin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="master\MESTrainingLogin.Master.vb">
+      <DependentUpon>MESTrainingLogin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\SlimBanner.Master.designer.vb">
+      <DependentUpon>SlimBanner.Master</DependentUpon>
+    </Compile>
+    <Compile Include="master\SlimBanner.Master.vb">
+      <DependentUpon>SlimBanner.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="master\Test.Master.designer.vb">
+      <DependentUpon>Test.Master</DependentUpon>
+    </Compile>
+    <Compile Include="master\Test.Master.vb">
+      <DependentUpon>Test.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MD_Menu.vb" />
+    <Compile Include="MESRegistration.aspx.designer.vb">
+      <DependentUpon>MESRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MESRegistration.aspx.vb">
+      <DependentUpon>MESRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MESRegistrationNew.aspx.designer.vb">
+      <DependentUpon>MESRegistrationNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MESRegistrationNew.aspx.vb">
+      <DependentUpon>MESRegistrationNew.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Test.aspx.designer.vb">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test.aspx.vb">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Upload.aspx.designer.vb">
+      <DependentUpon>Upload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Upload.aspx.vb">
+      <DependentUpon>Upload.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="XSDs\MReport.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MReport.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="Reports\MarineCertificate.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\page\new-1.cpt" />
+    <Content Include="images\page\new-1a.cpt" />
+    <Content Include="images\page\new-2.cpt" />
+    <Content Include="images\page\new-2a.cpt" />
+    <Content Include="master\FullBanner.Master" />
+    <Content Include="master\Index2Col.Master" />
+    <Content Include="master\Index3Col.Master" />
+    <Content Include="master\Inner1Col.Master" />
+    <Content Include="master\Inner2Col.Master" />
+    <Content Include="master\Inner3Col.Master" />
+    <Content Include="master\LeftNav.Master" />
+    <Content Include="master\Main.master" />
+    <Content Include="master\SlimBanner.Master" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\PublishProfiles\MSACaseInformationSearch.pubxml" />
+    <None Include="My Project\PublishProfiles\MSACaseSearch.pubxml" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50867</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50867/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
