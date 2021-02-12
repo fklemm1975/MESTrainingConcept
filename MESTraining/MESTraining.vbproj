@@ -131,6 +131,7 @@
     <Content Include="images\mde-logo-txt.png" />
     <Content Include="images\MDELogo.jpg" />
     <Content Include="images\mes-logo.png" />
+    <Content Include="images\MESLogoDec2019.png" />
     <Content Include="images\MES_logo.jpg" />
     <Content Include="images\new.png" />
     <Content Include="images\register.png" />

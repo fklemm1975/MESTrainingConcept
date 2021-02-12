@@ -6,10 +6,10 @@
 <head runat="server">
     <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
     <title></title>
-    <%--    <asp:Image ID="imgRegister" runat="server" ImageUrl="../Images/MES_logo.jpg"  />--%>
+    <%--    <asp:Image ID="imgRegister" runat="server" ImageUrl="../Images/MESLogoDec2019.png"  />--%>
     <center>
         <a href="https://menv.com/">
-            <img src="../Images/MES_logo.jpg" alt="MES Training Center" style="width: 500px; height: 125px;">
+            <img src="../Images/MESLogoDec2019.png" alt="MES Training Center" style="width: 500px; height: 125px;">
         </a>
     </center>
 
@@ -20,7 +20,7 @@
     <form id="form1" runat="server">
         <div>
 
-            <asp:Table runat="server">
+            <asp:Table runat="server" style="margin-left:auto; margin-right:auto">
                 <asp:TableRow>
                     <asp:TableCell VerticalAlign="Top" Wrap="false">
                 <br />
