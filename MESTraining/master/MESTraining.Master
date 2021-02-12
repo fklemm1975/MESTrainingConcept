@@ -6,11 +6,16 @@
 <head runat="server">
     <title></title>
 
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark&display=swap" rel="stylesheet" />
+
     <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
     <link href="~/Styles/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+
+
     <%--<title></title>
         <asp:Image ID="imgRegister" runat="server" ImageUrl="../Images/MESLogoDec2019.png"  />
     <center>
@@ -27,32 +32,32 @@
 <body>
     <form runat="server">
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-            <a href="https://www.menv.com"><img src="images/icons/MES_LogoAlt.png" alt="MES Logo" style="width:163px;height:42px;vertical-align:text-top"/></a>
-            <a class="navbar-brand" href="./Default.aspx" style="margin-left:25px">
-                MES Training Center
+            <a href="https://www.menv.com">
+                <img src="images/icons/MES_LogoAlt.png" alt="MES Logo" style="width: 163px; height: 42px; vertical-align: text-top" /></a>
+            <a class="navbar-brand" href="./Default.aspx" style="margin-left: 25px">MES Training Center
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item" runat="server" id="homeTab">
-                <a class="nav-link" href="./Default.aspx">Home
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item" runat="server" id="homeTab">
+                        <a class="nav-link" href="./Default.aspx">Home
                   <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item" runat="server" id="aboutTab">
-                <a class="nav-link" href="./MESRegistration.aspx">Update Information</a>
-              </li>
-              <li class="nav-item" runat="server" id="registerTab">
-                <a class="nav-link" href="./CertificationsHome.aspx">Training Courses</a>
-              </li>
-            </ul>
-            <div class="loginDisplay">
-                <asp:LinkButton ID="lblLogout" runat="server" Text="Log Out" ForeColor="white" Font-Underline="true" href="./LogOut.aspx"></asp:LinkButton>
+                        </a>
+                    </li>
+                    <li class="nav-item" runat="server" id="aboutTab">
+                        <a class="nav-link" href="./MESRegistration.aspx">Update Information</a>
+                    </li>
+                    <li class="nav-item" runat="server" id="registerTab">
+                        <a class="nav-link" href="./CertificationsHome.aspx">Training Courses</a>
+                    </li>
+                </ul>
+                <div class="loginDisplay">
+                    <asp:LinkButton ID="lblLogout" runat="server" Text="Log Out" ForeColor="white" Font-Underline="true" href="./LogOut.aspx"></asp:LinkButton>
+                </div>
             </div>
-          </div>
 
         </nav>
 
