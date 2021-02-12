@@ -6756,7 +6756,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #2fa4e7 !important;
+    background-color: #4b6c9e !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -10305,10 +10305,10 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-.bg-primary {
+/*.bg-primary {
   background-image: linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
   background-repeat: no-repeat;
-}
+}*/
 
 .bg-dark {
   background-image: linear-gradient(#04519b, #033c73 60%, #02325f);

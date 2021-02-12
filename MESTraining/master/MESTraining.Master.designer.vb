@@ -12,7 +12,7 @@ Option Explicit On
 
 
 Partial Public Class MESTraining
-
+    
     '''<summary>
     '''HeadContent control.
     '''</summary>
@@ -21,16 +21,43 @@ Partial Public Class MESTraining
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents HeadContent As Global.System.Web.UI.WebControls.ContentPlaceHolder
-
+    
     '''<summary>
-    '''form1 control.
+    '''homeTab control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
-
+    Protected WithEvents homeTab As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    
+    '''<summary>
+    '''aboutTab control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents aboutTab As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    
+    '''<summary>
+    '''registerTab control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents registerTab As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    
+    '''<summary>
+    '''lblLogout control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblLogout As Global.System.Web.UI.WebControls.LinkButton
+    
     '''<summary>
     '''MainContent control.
     '''</summary>
