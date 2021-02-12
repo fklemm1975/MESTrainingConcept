@@ -82,7 +82,6 @@
     <Folder Include="egov\img\icons\" />
     <Folder Include="egov\img\sprites\" />
     <Folder Include="egov\js\" />
-    <Folder Include="js\" />
     <Folder Include="Pages\" />
   </ItemGroup>
   <ItemGroup>
@@ -147,6 +146,8 @@
     <Content Include="images\tvComplete.png" />
     <Content Include="images\tvIncomplete.png" />
     <Content Include="images\update.png" />
+    <Content Include="js\bootstrap.bundle.min.js" />
+    <Content Include="js\jquery-3.5.1.js" />
     <Content Include="Login.aspx" />
     <Content Include="LogOut.aspx" />
     <Content Include="MarineRegistration.aspx" />
@@ -190,10 +191,12 @@
     <Content Include="master\MESTraining.Master" />
     <Content Include="master\Test.Master" />
     <Content Include="master\MESTrainingLogin.Master" />
+    <Content Include="js\bootstrap.bundle.min.js.map" />
     <None Include="My Project\PublishProfiles\CaseInformation_MESTEST.pubxml" />
     <None Include="My Project\PublishProfiles\MDE_OCP_Case.pubxml" />
     <Content Include="Nav-SocialMedia.xml" />
     <Content Include="scripts\Print.js" />
+    <Content Include="styles\bootstrap.css" />
     <Content Include="styles\Site.css" />
     <Content Include="style\agencyAdd.css" />
     <Content Include="style\MDhandheld.css" />

@@ -4,6 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <link href="~/Styles/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
     <title></title>
     <%--    <asp:Image ID="imgRegister" runat="server" ImageUrl="../Images/MESLogoDec2019.png"  />--%>
