@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="Certification" Language="vb" AutoEventWireup="false" MasterPageFile="~/master/MESTraining.Master" CodeBehind="Certification.aspx.vb" Inherits="MESTraining.Certification" %>
+
 <%@ Register Src="~/ExamRepeaterControl.ascx" TagName="ExamRepeaterControl" TagPrefix="uc1" %>
 
 
@@ -8,17 +9,28 @@
     <link href="styles/BMPDMS.css" rel="stylesheet" />
 
 
-    <asp:Table ID="Table1" runat="server" HorizontalAlign="Left">
-        <asp:TableRow><asp:TableCell HorizontalAlign="left" Wrap="false" CssClass="BMPXPageTitleCenter" ColumnSpan="3">  <asp:Label ID="lblCertificationName" runat="server" Text="Label"></asp:Label></asp:TableCell></asp:TableRow>
-
-        <asp:TableRow><asp:TableCell HorizontalAlign="Left" ColumnSpan="3">&nbsp;</asp:TableCell></asp:TableRow>    <%-- This is the blank line --%>
-
+    <asp:Table ID="Table1" runat="server" HorizontalAlign="Left" Width="100%">
         <asp:TableRow>
-            <asp:TableCell ColumnSpan="3" HorizontalAlign="Left">Please view training videos and complete practice review questions prior to taking the exam.</asp:TableCell>
+            <asp:TableCell HorizontalAlign="Center" Wrap="false" CssClass="BMPXPageTitleCenter" ColumnSpan="3">
+                <asp:Label ID="lblCertificationName" runat="server" Text="Label"></asp:Label>
+            </asp:TableCell>
         </asp:TableRow>
 
-        <asp:TableRow><asp:TableCell HorizontalAlign="Left" ColumnSpan="3">&nbsp;</asp:TableCell></asp:TableRow>    <%-- This is the blank line --%>
-<%--        
+        <asp:TableRow>
+            <asp:TableCell HorizontalAlign="Left" ColumnSpan="3">&nbsp;</asp:TableCell>
+        </asp:TableRow>
+        <%-- This is the blank line --%>
+
+        <asp:TableRow>
+            <%--Frank adjusted this to center--%>
+            <asp:TableCell ColumnSpan="3" HorizontalAlign="Center">Please view training videos and complete practice review questions prior to taking the exam.</asp:TableCell>
+        </asp:TableRow>
+
+        <asp:TableRow>
+            <asp:TableCell HorizontalAlign="Left" ColumnSpan="3">&nbsp;</asp:TableCell>
+        </asp:TableRow>
+        <%-- This is the blank line --%>
+        <%--        
         <asp:TableRow>
             <asp:TableCell horizontalAlign ="Left">
                 <a href="Default.aspx">Training Courses</a><br />
@@ -26,23 +38,25 @@
             </asp:TableCell>
         </asp:TableRow>--%>
 
+        <%--Frank rearranged this to place button and selection on the same row--%>
         <asp:TableRow>
-            <asp:TableCell ColumnSpan="3" HorizontalAlign="Left">Select continue to take next course section.</asp:TableCell>
-        </asp:TableRow>
-
-        <asp:TableRow>
-            <asp:TableCell ColumnSpan="3">
+            <asp:TableCell ColumnSpan="2" HorizontalAlign="Left">Select continue to take next course section</asp:TableCell>
+            <asp:TableCell ColumnSpan="1">
                 <asp:Button ID="btContinue" runat="server" Text="Continue" />
             </asp:TableCell>
         </asp:TableRow>
 
         <asp:TableRow>
-            <asp:TableCell ColumnSpan="3">
+            <asp:TableCell ColumnSpan="2" HorizontalAlign="Left">Select "Take Exam" to go to the final exam</asp:TableCell>
+            <asp:TableCell ColumnSpan="1">
                 <asp:Button ID="btTakeExam" runat="server" Text="Take Exam" />
             </asp:TableCell>
         </asp:TableRow>
 
-        <asp:TableRow><asp:TableCell HorizontalAlign="Left" ColumnSpan="3">&nbsp;</asp:TableCell></asp:TableRow>    <%-- This is the blank line --%>
+        <asp:TableRow>
+            <asp:TableCell HorizontalAlign="Left" ColumnSpan="3">&nbsp;</asp:TableCell>
+        </asp:TableRow>
+        <%-- This is the blank line --%>
 
         <asp:TableRow>
             <asp:TableCell ColumnSpan="3">
@@ -51,10 +65,19 @@
         </asp:TableRow>
 
         <asp:TableRow>
-            <asp:TableCell VerticalAlign="Top">
-                <asp:TreeView ID="tvItems" runat="server" NodeWrap="true" Width="300px"></asp:TreeView>
+            <%--Frank added padding to this cell as well as width--%>
+            <asp:TableCell VerticalAlign="Top" Style="padding-right: 10px;" Width="320px">
+                <%-- Frank creating a separate table so that only the TreeView item has a border attempt--%>
+                <asp:Table runat="server" CssClass="list-border">
+                    <asp:TableRow>
+                        <asp:TableCell>
+                            <asp:TreeView ID="tvItems" runat="server" NodeWrap="true" Width="300px"></asp:TreeView>
+                        </asp:TableCell>
+                    </asp:TableRow>
+                </asp:Table>
             </asp:TableCell>
-            <asp:TableCell>
+            <%--            Frank added border to this cell--%>
+            <asp:TableCell Style="border-left: solid;">
                 &nbsp;&nbsp;&nbsp;
             </asp:TableCell>
 
@@ -78,8 +101,9 @@
                         </asp:TableRow>
                         <asp:TableRow>
                             <asp:TableCell>
-                                <asp:Panel ID="pnlVideo" runat="server" width="512" height="384">
-<%--                                    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="512" height="384">
+                                <%--Frank added HorizontalAlign and width to this--%>
+                                <asp:Panel ID="pnlVideo" runat="server" Width="100%" Height="384" HorizontalAlign="Center">
+                                    <%--                                    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="512" height="384">
                                         <param name="movie" value="<% =swfFileName%>" />
                                         <param name="quality" value="high" />
                                         <param name="play" value="false" />
@@ -101,19 +125,22 @@
 
 
                                     yyyyyy--%>
-
-
-    <video width="320" height="240" controls autoplay>
-<%--  	<source src=<% =swfFileName%> type="video/mp4">--%>
-    <source src=”<% = swfFileName%>” type=”video/mp4”> 
-
-  	Your browser does not support the video tag.
-	</video>
-<%--	zzzzz--%>
-
+                                    <%--It might not be necessary but Frank but the video in a table--%>
+                                    <asp:Table runat="server" HorizontalAlign="Center">
+                                        <asp:TableRow>
+                                            <asp:TableCell>
+                                            <video width="320" height="240" controls autoplay>
+                                                <%--  	<source src=<% =swfFileName%> type="video/mp4">--%>
+                                                <source src="”<% = swfFileName%>”" type="”video/mp4”">
+                                                Your browser does not support the video tag.
+                                            </video>
+                                            </asp:TableCell>
+                                        </asp:TableRow>
+                                    </asp:Table>
+                                    <%--	zzzzz--%>
                                 </asp:Panel>
 
-                                <asp:Panel ID="pnlCompressed" runat="server" width="512" height="384" visible="false">
+                                <asp:Panel ID="pnlCompressed" runat="server" Width="512" Height="384" Visible="false">
                                     <video width="480" height="320" controls="controls">
                                         <source src="<% =swfFileName%>" type="video/mp4">
                                     </video>
@@ -122,7 +149,7 @@
                         </asp:TableRow>
                         <asp:TableRow>
                             <asp:TableCell>
-                                <asp:label ID="lblVideoCaption" runat="server"></asp:label>
+                                <asp:Label ID="lblVideoCaption" runat="server"></asp:Label>
                             </asp:TableCell>
                         </asp:TableRow>
                         <asp:TableRow>
@@ -134,33 +161,36 @@
                         </asp:TableRow>
                         <asp:TableRow>
                             <asp:TableCell>
-                                <asp:label ID="lblImageCaption" runat="server"></asp:label>
+                                <asp:Label ID="lblImageCaption" runat="server"></asp:Label>
                             </asp:TableCell>
                         </asp:TableRow>
 
-                        <asp:TableRow><asp:TableCell HorizontalAlign="Left" ColumnSpan="3">&nbsp;</asp:TableCell></asp:TableRow>    <%-- This is the blank line --%>
+                        <asp:TableRow>
+                            <asp:TableCell HorizontalAlign="Left" ColumnSpan="3">&nbsp;</asp:TableCell>
+                        </asp:TableRow>
+                        <%-- This is the blank line --%>
 
                         <asp:TableRow>
                             <asp:TableCell>
-                                <asp:HyperLink ID="hlStateManual" runat="server" Target="_blank"></asp:HyperLink>        
+                                <asp:HyperLink ID="hlStateManual" runat="server" Target="_blank"></asp:HyperLink>
                             </asp:TableCell>
                         </asp:TableRow>
                         <asp:TableRow>
                             <asp:TableCell>
-                                <asp:HyperLink ID="hlRPCpt1" runat="server" Target="_blank"></asp:HyperLink>        
+                                <asp:HyperLink ID="hlRPCpt1" runat="server" Target="_blank"></asp:HyperLink>
                             </asp:TableCell>
                         </asp:TableRow>
                         <asp:TableRow>
                             <asp:TableCell>
-                                <asp:HyperLink ID="hlRPCpt2" runat="server" Target="_blank"></asp:HyperLink>        
+                                <asp:HyperLink ID="hlRPCpt2" runat="server" Target="_blank"></asp:HyperLink>
                             </asp:TableCell>
                         </asp:TableRow>
-                    </asp:table>
+                    </asp:Table>
                 </asp:Panel>
                 <asp:Panel ID="pnlFollowUpQuestions" runat="server" Visible="false">
                     <asp:Repeater runat="server" ID="rptFollowUpQuestions">
                         <ItemTemplate>
-                            <uc1:ExamRepeaterControl id="ExamRepeaterControl1" runat="server" />
+                            <uc1:ExamRepeaterControl ID="ExamRepeaterControl1" runat="server" />
                         </ItemTemplate>
                     </asp:Repeater>
                 </asp:Panel>
@@ -183,7 +213,7 @@
 
     </asp:Table>
 
-    
+
 
 
 </asp:Content>

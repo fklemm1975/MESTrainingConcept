@@ -98,7 +98,7 @@ Public Class Certification
 
                 If Not dtoUS.ExamEndDate Is DBNull.Value Then
                     Me.btSaveCont.Visible = False
-                    Me.btTakeExam.Visible = False
+                    'Me.btTakeExam.Visible = False 'Frank comment out, ideally the row with the button would be commented out
                 End If
 
                 'testing these last lines in postback - bb - 5/10/2012

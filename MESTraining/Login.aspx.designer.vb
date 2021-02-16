@@ -12,7 +12,7 @@ Option Explicit On
 
 
 Partial Public Class Login
-
+    
     '''<summary>
     '''Table2 control.
     '''</summary>
@@ -21,16 +21,16 @@ Partial Public Class Login
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Table2 As Global.System.Web.UI.WebControls.Table
-
+    
     '''<summary>
-    '''btRegister control.
+    '''lbRegister control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btRegister As Global.System.Web.UI.WebControls.Button
-
+    Protected WithEvents lbRegister As Global.System.Web.UI.WebControls.LinkButton
+    
     '''<summary>
     '''Table3 control.
     '''</summary>
@@ -39,7 +39,7 @@ Partial Public Class Login
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Table3 As Global.System.Web.UI.WebControls.Table
-
+    
     '''<summary>
     '''txtEmailAddress control.
     '''</summary>
@@ -48,7 +48,7 @@ Partial Public Class Login
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtEmailAddress As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtPassword control.
     '''</summary>
@@ -57,7 +57,7 @@ Partial Public Class Login
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtPassword As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''lblMessage control.
     '''</summary>
@@ -66,7 +66,7 @@ Partial Public Class Login
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lblMessage As Global.System.Web.UI.WebControls.Label
-
+    
     '''<summary>
     '''btLogin control.
     '''</summary>

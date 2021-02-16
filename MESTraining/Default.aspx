@@ -28,7 +28,8 @@ This online training is intended to help MES employees to complete training requ
 </p>
     <table width="800px">
         <tr>
-            <td style="font-family:Cambria; font-size:14pt" width="20%" nowrap="true">
+            <%--<td style="font-family:Cambria; font-size:14pt" width="20%" nowrap="true">--%>
+            <td width="20%" nowrap="true">
 <%--                <h1><a href="Search/Search.aspx">Search</a></h1>
 
                 <h1><a href="CertificationsHome.aspx">Training Courses</a></h1>
@@ -39,7 +40,7 @@ This online training is intended to help MES employees to complete training requ
 
 --%>
 
-                <a href="CertificationsHome.aspx">Training Courses</a><br />
+                <a class="spec-text spec-text-mid" href="CertificationsHome.aspx">Training Courses</a><br />
 
 
             </td>

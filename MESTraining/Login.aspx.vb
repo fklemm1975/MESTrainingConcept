@@ -196,7 +196,26 @@ Public Class Login
 
     'End Sub
 
-    Private Sub btRegister_Click(sender As Object, e As EventArgs) Handles btRegister.Click
+    'Private Sub btRegister_Click(sender As Object, e As EventArgs) Handles btRegister.Click
+    '    Try
+    '        Response.Redirect("~/MESRegistrationNew.aspx")
+
+    '    Catch ex1 As ThreadAbortException
+    '        'Response.Redirect() will throw this error, we don't need to do anything with it, so we'll capture it here, instead of in the most general exception below
+    '        'do nothing
+
+    '    Catch ex As Exception
+
+    '        Dim sInnerException As String = ""
+    '        'If Not ex.InnerException Is Nothing Then
+    '        '    sInnerException = sInnerException
+    '        'End If
+
+    '        l.LogIt("lbRegister_Click Error: " & ex.Source & vbCrLf & vbCrLf & ex.Message & sInnerException)
+    '    End Try
+    'End Sub
+
+    Private Sub lbRegister_Click(sender As Object, e As EventArgs) Handles lbRegister.Click
         Try
             Response.Redirect("~/MESRegistrationNew.aspx")
 
@@ -214,5 +233,4 @@ Public Class Login
             l.LogIt("lbRegister_Click Error: " & ex.Source & vbCrLf & vbCrLf & ex.Message & sInnerException)
         End Try
     End Sub
-
 End Class

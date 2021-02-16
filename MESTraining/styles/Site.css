@@ -2,9 +2,9 @@
 ----------------------------------------------------------*/
 
 body {
-    background: #b6b7bc;
+    /*background: #b6b7bc;*/
     font-size: .80em;
-    font-family: "Palanquin Dark", "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
     margin: 0px;
     padding: 0px;
     color: #696969;
@@ -33,27 +33,32 @@ p {
 ----------------------------------------------------------*/
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: "Palanquin Dark";
     font-size: 1.5em;
     color: #666666;
-    font-variant: small-caps;
     text-transform: none;
     font-weight: 200;
     margin-bottom: 0px;
 }
 
 h1 {
-    font-size: 1.6em;
+    font-size: 2.0em;
     padding-bottom: 0px;
     margin-bottom: 0px;
 }
 
 h2 {
     font-size: 1.5em;
-    font-weight: 600;
+    /*font-weight: 600;*/
 }
 
 h3 {
     font-size: 1.2em;
+}
+
+h3 b {
+    font-size: 1.2em;
+    font-weight: 500;
 }
 
 h4 {
@@ -256,3 +261,38 @@ div.accountInfo {
     align: center;
 }
 
+
+/* Frank add ons */
+.nav-link {
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+}
+
+.spec-text {
+    font-family: "Palanquin Dark";
+    color: #04296e;
+}
+
+.spec-text-small {
+    font-size: 12pt;
+}
+
+.spec-text-mid {
+    font-size: 14pt;
+}
+
+.spec-text-large {
+    font-size: 22pt;
+}
+
+.spec-text-bold {
+    font-weight: bold;
+}
+
+.list-border {
+    border-style: solid;
+    border-width: thin;
+    border-radius: 5px;
+    border-collapse: separate;
+    background-color: lightcyan;
+}

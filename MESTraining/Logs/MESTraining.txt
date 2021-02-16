@@ -72,3 +72,10 @@ Method Name: OnLoad
 Object reference not set to an instance of an object.
 Method Name: Page_Load
 Method Name: OnLoad
+
+
+2/16/2021 10:17 AM - PageLoad Error: Microsoft.VisualBasic
+
+Operator '>=' is not defined for type 'DBNull' and type 'Integer'.
+Method Name: Page_Load
+Method Name: OnLoad
